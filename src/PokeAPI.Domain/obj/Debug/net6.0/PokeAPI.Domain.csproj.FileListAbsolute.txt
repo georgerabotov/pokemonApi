@@ -1,0 +1,12 @@
+C:\_github\pokemonApi\src\PokeAPI.Domain\bin\Debug\net6.0\PokeAPI.Domain.deps.json
+C:\_github\pokemonApi\src\PokeAPI.Domain\bin\Debug\net6.0\PokeAPI.Domain.dll
+C:\_github\pokemonApi\src\PokeAPI.Domain\bin\Debug\net6.0\PokeAPI.Domain.pdb
+C:\_github\pokemonApi\src\PokeAPI.Domain\obj\Debug\net6.0\PokeAPI.Domain.csproj.AssemblyReference.cache
+C:\_github\pokemonApi\src\PokeAPI.Domain\obj\Debug\net6.0\PokeAPI.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\_github\pokemonApi\src\PokeAPI.Domain\obj\Debug\net6.0\PokeAPI.Domain.AssemblyInfoInputs.cache
+C:\_github\pokemonApi\src\PokeAPI.Domain\obj\Debug\net6.0\PokeAPI.Domain.AssemblyInfo.cs
+C:\_github\pokemonApi\src\PokeAPI.Domain\obj\Debug\net6.0\PokeAPI.Domain.csproj.CoreCompileInputs.cache
+C:\_github\pokemonApi\src\PokeAPI.Domain\obj\Debug\net6.0\PokeAPI.Domain.dll
+C:\_github\pokemonApi\src\PokeAPI.Domain\obj\Debug\net6.0\refint\PokeAPI.Domain.dll
+C:\_github\pokemonApi\src\PokeAPI.Domain\obj\Debug\net6.0\PokeAPI.Domain.pdb
+C:\_github\pokemonApi\src\PokeAPI.Domain\obj\Debug\net6.0\ref\PokeAPI.Domain.dll

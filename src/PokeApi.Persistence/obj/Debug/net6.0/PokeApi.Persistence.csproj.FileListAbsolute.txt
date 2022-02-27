@@ -1,0 +1,15 @@
+C:\_github\pokemonApi\src\PokeApi.Persistence\bin\Debug\net6.0\PokeApi.Persistence.deps.json
+C:\_github\pokemonApi\src\PokeApi.Persistence\bin\Debug\net6.0\PokeApi.Persistence.dll
+C:\_github\pokemonApi\src\PokeApi.Persistence\bin\Debug\net6.0\PokeApi.Persistence.pdb
+C:\_github\pokemonApi\src\PokeApi.Persistence\bin\Debug\net6.0\PokeAPI.Domain.dll
+C:\_github\pokemonApi\src\PokeApi.Persistence\bin\Debug\net6.0\PokeAPI.Domain.pdb
+C:\_github\pokemonApi\src\PokeApi.Persistence\obj\Debug\net6.0\PokeApi.Persistence.csproj.AssemblyReference.cache
+C:\_github\pokemonApi\src\PokeApi.Persistence\obj\Debug\net6.0\PokeApi.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\_github\pokemonApi\src\PokeApi.Persistence\obj\Debug\net6.0\PokeApi.Persistence.AssemblyInfoInputs.cache
+C:\_github\pokemonApi\src\PokeApi.Persistence\obj\Debug\net6.0\PokeApi.Persistence.AssemblyInfo.cs
+C:\_github\pokemonApi\src\PokeApi.Persistence\obj\Debug\net6.0\PokeApi.Persistence.csproj.CoreCompileInputs.cache
+C:\_github\pokemonApi\src\PokeApi.Persistence\obj\Debug\net6.0\PokeApi.Persistence.csproj.CopyComplete
+C:\_github\pokemonApi\src\PokeApi.Persistence\obj\Debug\net6.0\PokeApi.Persistence.dll
+C:\_github\pokemonApi\src\PokeApi.Persistence\obj\Debug\net6.0\refint\PokeApi.Persistence.dll
+C:\_github\pokemonApi\src\PokeApi.Persistence\obj\Debug\net6.0\PokeApi.Persistence.pdb
+C:\_github\pokemonApi\src\PokeApi.Persistence\obj\Debug\net6.0\ref\PokeApi.Persistence.dll
