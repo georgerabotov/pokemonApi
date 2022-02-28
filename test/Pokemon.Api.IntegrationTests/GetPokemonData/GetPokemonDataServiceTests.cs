@@ -11,7 +11,7 @@ using Xunit;
 
 namespace Pokemon.Api.UnitTests.GetPokemonData
 {
-    [Trait("Category", "Unit Tests")]
+    [Trait("Category", "Integration Tests")]
     public class GetPokemonDataServiceTests
     {
         private readonly PokemonAppSettings _settings;

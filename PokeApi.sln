@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{4D8C1923-9
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pokemon.Api.UnitTests", "test\Pokemon.Api.UnitTests\Pokemon.Api.UnitTests.csproj", "{A1DA8D70-915A-46D9-9785-247DAC3B84AD}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pokemon.Api.IntegrationTests", "test\Pokemon.Api.IntegrationTests\Pokemon.Api.IntegrationTests.csproj", "{FC6372CB-9139-4744-AE28-1C1350FE886C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{A1DA8D70-915A-46D9-9785-247DAC3B84AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1DA8D70-915A-46D9-9785-247DAC3B84AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1DA8D70-915A-46D9-9785-247DAC3B84AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC6372CB-9139-4744-AE28-1C1350FE886C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC6372CB-9139-4744-AE28-1C1350FE886C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC6372CB-9139-4744-AE28-1C1350FE886C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC6372CB-9139-4744-AE28-1C1350FE886C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{A14253A8-82EF-45EB-A6B3-E09FAB71F865} = {8441FB72-AF5C-4315-BBA3-10365A1DB608}
 		{4A3DA469-A01D-4DB1-A34C-A087E2B52F7D} = {8441FB72-AF5C-4315-BBA3-10365A1DB608}
 		{A1DA8D70-915A-46D9-9785-247DAC3B84AD} = {4D8C1923-987C-4E07-85D5-AC08F86E371A}
+		{FC6372CB-9139-4744-AE28-1C1350FE886C} = {4D8C1923-987C-4E07-85D5-AC08F86E371A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FA52A100-9205-4706-891E-4F0E07F75398}

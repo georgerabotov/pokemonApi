@@ -12,7 +12,7 @@ using Xunit;
 
 namespace Pokemon.Api.UnitTests.TranslatorService
 {
-    [Trait("Category", "Unit Tests")]
+    [Trait("Category", "Integration Tests")]
     public class TranslatorServiceTests
     {
         private readonly PokemonAppSettings _settings;
@@ -36,7 +36,16 @@ namespace Pokemon.Api.UnitTests.TranslatorService
             // sometimes these fail because the API can only take (x) amount of requests
             var service = new TranslateDescriptionService(_settings);
 
-            var result = await service.TranslatePokemonDescriptionAsync(new PokemonModel(name, description, habitat, islegendary, new List<PokemonSpeciesFlavorTexts> { new PokemonSpeciesFlavorTexts { Language = new NamedApiResource<Language> { Name = "en" }, FlavorText = "this is a new flavour Text, don't except me to be the best in the game" } }));
+            var result = await service.TranslatePokemonDescriptionAsync
+                (new PokemonModel
+                    (name, description, habitat, islegendary, new List<PokemonSpeciesFlavorTexts> 
+                        { new PokemonSpeciesFlavorTexts 
+                            { Language = new NamedApiResource<Language> 
+                                { Name = "en" }, FlavorText = "this is a new flavour Text" 
+                            } 
+                        }
+                    )
+                );
 
             result.Should().NotBeNullOrWhiteSpace();
             result.Should().NotBe("this is a test description");
