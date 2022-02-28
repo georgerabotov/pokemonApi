@@ -1,13 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31613.86
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokeApi.API", "src\PokeApi.API\PokeApi.API.csproj", "{2F17E9A0-CABA-4B06-83CE-5F3A36648BB2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokeAPI.Domain", "src\PokeAPI.Domain\PokeAPI.Domain.csproj", "{A14253A8-82EF-45EB-A6B3-E09FAB71F865}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokeApi.Persistence", "src\PokeApi.Persistence\PokeApi.Persistence.csproj", "{4A3DA469-A01D-4DB1-A34C-A087E2B52F7D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8441FB72-AF5C-4315-BBA3-10365A1DB608}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{4D8C1923-987C-4E07-85D5-AC08F86E371A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pokemon.Api.UnitTests", "test\Pokemon.Api.UnitTests\Pokemon.Api.UnitTests.csproj", "{A1DA8D70-915A-46D9-9785-247DAC3B84AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +33,19 @@ Global
 		{4A3DA469-A01D-4DB1-A34C-A087E2B52F7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A3DA469-A01D-4DB1-A34C-A087E2B52F7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A3DA469-A01D-4DB1-A34C-A087E2B52F7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1DA8D70-915A-46D9-9785-247DAC3B84AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1DA8D70-915A-46D9-9785-247DAC3B84AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1DA8D70-915A-46D9-9785-247DAC3B84AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1DA8D70-915A-46D9-9785-247DAC3B84AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2F17E9A0-CABA-4B06-83CE-5F3A36648BB2} = {8441FB72-AF5C-4315-BBA3-10365A1DB608}
+		{A14253A8-82EF-45EB-A6B3-E09FAB71F865} = {8441FB72-AF5C-4315-BBA3-10365A1DB608}
+		{4A3DA469-A01D-4DB1-A34C-A087E2B52F7D} = {8441FB72-AF5C-4315-BBA3-10365A1DB608}
+		{A1DA8D70-915A-46D9-9785-247DAC3B84AD} = {4D8C1923-987C-4E07-85D5-AC08F86E371A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FA52A100-9205-4706-891E-4F0E07F75398}

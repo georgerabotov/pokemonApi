@@ -18,7 +18,7 @@ namespace PokeApi.Persistence
             _client = new HttpClient();
         }
 
-        public Task<string> TranslatePokemonDescription(PokemonModel pokemon)
+        public Task<string> TranslatePokemonDescriptionAsync(PokemonModel pokemon)
         {
             var randomInt = pokemon.RandomTranslationSelector(_settings.Language);
             return Translate(pokemon, randomInt);

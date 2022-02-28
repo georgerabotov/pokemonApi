@@ -20,7 +20,7 @@ namespace PokeApi.API.Handlers
         public async Task<PokemonResponse> Handle(GetTranslatedPokemonRequest request, CancellationToken cancellationToken)
         {
             var pokemon = await _pokemonData.GetPokemonAsync(request.PokemonName);
-            pokemon.SetPokemonDescription(await _translator.TranslatePokemonDescription(pokemon));
+            pokemon.SetPokemonDescription(await _translator.TranslatePokemonDescriptionAsync(pokemon));
             return _mapper.Map<PokemonResponse>(pokemon);
         }
     }

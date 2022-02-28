@@ -4,6 +4,6 @@ namespace PokeAPI.Domain
 {
     public interface ITranslateDescription
     {
-        Task<string> TranslatePokemonDescription(PokemonModel pokemon);
+        Task<string> TranslatePokemonDescriptionAsync(PokemonModel pokemon);
     }
 }
