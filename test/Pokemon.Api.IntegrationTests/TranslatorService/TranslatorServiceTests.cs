@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Pokemon.Api.UnitTests.TranslatorService
+namespace Pokemon.Api.IntegrationTests.TranslatorService
 {
     [Trait("Category", "Integration Tests")]
     public class TranslatorServiceTests

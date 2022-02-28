@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Pokemon.Api.UnitTests.GetPokemonData
+namespace Pokemon.Api.IntegrationTests.GetPokemonData
 {
     [Trait("Category", "Integration Tests")]
     public class GetPokemonDataServiceTests
