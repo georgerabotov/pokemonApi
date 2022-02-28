@@ -1,6 +1,5 @@
 # PokeApi
 <h1 align="center">Hi 👋, I'm Georgi Rabotov and this is the PokeApi</h1>
-<h3 align="center">This is a PokeApi that was created for an interview with TrueLayer. </h3>
 <h3 align="center">It was quite fun and challenging project to work on, obviously, it's an interview, so I had to show some of knowledge too! </h3>
 
 <h2 align="center">How to run:</h2>
