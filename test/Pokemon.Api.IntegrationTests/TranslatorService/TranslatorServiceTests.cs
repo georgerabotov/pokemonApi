@@ -28,9 +28,9 @@ namespace Pokemon.Api.IntegrationTests.TranslatorService
         }
 
         [Theory]
-        [InlineData("zapdos", "this is a test description", "forest", false, "This is a new flavour text")]
-        [InlineData("zapdos", "this is a test description", "cave", false, "A new flavour text,  this is")]
-        [InlineData("zapdos", "this is a test description", "forest", true, "A new flavour text,  this is")]
+        [InlineData("zapdos", "this is a test description", "forest", false, "This is a new flavour text,  don't bethink i've did put enow spice for this test")]
+        [InlineData("zapdos", "this is a test description", "cave", false, "A new flavour text,  this is,I 've put enough spice for this test,  don't think")]
+        [InlineData("zapdos", "this is a test description", "forest", true, "A new flavour text,  this is,I 've put enough spice for this test,  don't think")]
         public async Task Validate_Service_Behaves_Correctly(string name, string description, string habitat, bool islegendary, string expectedObject)
         {
             // sometimes these fail because the API can only take (x) amount of requests
@@ -41,7 +41,7 @@ namespace Pokemon.Api.IntegrationTests.TranslatorService
                     (name, description, habitat, islegendary, new List<PokemonSpeciesFlavorTexts> 
                         { new PokemonSpeciesFlavorTexts 
                             { Language = new NamedApiResource<Language> 
-                                { Name = "en" }, FlavorText = "this is a new flavour Text" 
+                                { Name = "en" }, FlavorText = "this is a new flavour Text, don't think I've put enough spice for this test" 
                             } 
                         }
                     )
