@@ -7,7 +7,7 @@ namespace PokeApi.API.Validators
     {
         public GetPokemonRequestValidator()
         {
-            RuleFor(x => x.PokemonName).NotNull().NotEmpty();
+            RuleFor(x => x.PokemonName).NotNull().WithMessage("Do messages work?").NotEmpty().WithMessage("Do messages work?");
         }
     }
 }

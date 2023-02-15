@@ -26,45 +26,43 @@ namespace PokeApi.Core
             }
         }
 
-        private Task HandleExceptionAsync(HttpContext context, Exception exception)
+        private async Task HandleExceptionAsync(HttpContext context, Exception exception)
         {
-            
-            string result;
-            var code = HttpStatusCode.InternalServerError;
-
-            var errorMessage = exception.Message + exception.InnerException ?? "\nInner exception: " + exception.InnerException.Message;
-
-            if (exception.Message.Contains("404"))
-            {
-                code = HttpStatusCode.NotFound;
-                errorMessage = "Could not find the pokemon in the pokedex";
-            }
-
-            if (exception is ValidationException ||
-                exception is System.ComponentModel.DataAnnotations.ValidationException)
-            {
-                code = HttpStatusCode.BadRequest;
-            }
-
-            if (exception is ValidationException)
-            {
-                errorMessage = errorMessage.Replace("Validation failed: \r\n -- ", "");
-
-                int innerExceptionIndex = errorMessage.IndexOf("\nInner exception", StringComparison.InvariantCulture);
-                if (innerExceptionIndex >= 0)
-                    errorMessage = errorMessage.Remove(innerExceptionIndex);
-
-                result = JsonConvert.SerializeObject(new { errorMessage });
-            }
-            else
-            {
-                result = errorMessage;
-            }
+            var statusCode = GetStatusCode(exception);
+            var response = new {
+                title = GetTitle(exception),
+                status = statusCode,
+                detail = exception.Message,
+                errors = GetErrors(exception)
+            };
 
             context.Response.ContentType = "application/json";
-            context.Response.StatusCode = (int)code;
+            context.Response.StatusCode = statusCode;
+            await context.Response.WriteAsync(JsonConvert.SerializeObject(response));
+        }
+        private static int GetStatusCode(Exception exception) =>
+            exception switch
+            {
+                BadHttpRequestException => StatusCodes.Status400BadRequest,
+                KeyNotFoundException => StatusCodes.Status404NotFound,
+                ValidationException => StatusCodes.Status422UnprocessableEntity,
+                _ => StatusCodes.Status500InternalServerError
+            };
+        private static string GetTitle(Exception exception) =>
+            exception switch
+            {
+                ApplicationException applicationException => applicationException.Message,
+                _ => "Server Error"
+            };
 
-            return context.Response.WriteAsync(result);
+        private static IReadOnlyDictionary<string , string> GetErrors(Exception exception)
+        {
+            Dictionary<string, string> errors = new();
+            if (exception is ValidationException validationException)
+            {
+                errors = validationException.Errors.ToDictionary(x => x.ErrorMessage, y => y.ErrorCode);
+            }
+            return errors;
         }
     }
 }

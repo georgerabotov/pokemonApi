@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using PokeApi.API.Requests;
 using PokeApi.Core;
+using System.Net.Mime;
 
 namespace PokeApi.Controllers
 {
@@ -24,6 +25,13 @@ namespace PokeApi.Controllers
         public async Task<IActionResult> GetTranslated(string pokemonname)
         {
             return await Ok(new GetTranslatedPokemonRequest(pokemonname));
+        }
+
+        [Consumes(MediaTypeNames.Application.Json)]
+        [HttpGet("generator/get")]
+        public async Task<IActionResult> Get(IF21 if21)
+        {
+            return await Ok(if21);
         }
     }
 }

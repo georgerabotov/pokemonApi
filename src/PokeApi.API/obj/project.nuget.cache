@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "m9mMRLoJNj5WQpMygldsCvMpw1PStPETeF1knK8vM5H+7HODxbQclClF4dqSEnD/T8pCA2pYcDGo1GAX8Emx7Q==",
+  "dgSpecHash": "1WrEcgmTBMnbVIK6PzDQiqS4A3D5PDsCr+zabKj0SvCSkDH1yAKrqshC9xBX2+QTGpW0p4z959ReZwgsVV+kKQ==",
   "success": true,
   "projectFilePath": "C:\\_github\\pokemonApi\\src\\PokeApi.API\\PokeApi.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Georgi Rabotov\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Georgi Rabotov\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\Georgi Rabotov\\.nuget\\packages\\fluentassertions\\6.5.1\\fluentassertions.6.5.1.nupkg.sha512",
-    "C:\\Users\\Georgi Rabotov\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
+    "C:\\Users\\Georgi Rabotov\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
     "C:\\Users\\Georgi Rabotov\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
     "C:\\Users\\Georgi Rabotov\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\Georgi Rabotov\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
